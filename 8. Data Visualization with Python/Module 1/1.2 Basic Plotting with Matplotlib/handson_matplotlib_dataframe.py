@@ -10,7 +10,11 @@ india_china_df = pd.DataFrame(data=india_china)
 # print(india_china_df)
 
 ax = plt.gca()
-india_china_df.plot(kind="line", x='year', y='India', ax=ax)
-india_china_df.plot(kind="line", x='year', y='China', ax=ax)
+
+# india_china_df.plot(kind="line", x='year', y='India', ax=ax)
+# india_china_df.plot(kind="line", x='year', y='China', ax=ax)
+
+india_china_df.plot(kind="hist", x='year', y='India', ax=ax)
+india_china_df.plot(kind="hist", x='year', y='China', ax=ax)
 
 plt.show()
